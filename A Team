@@ -1,0 +1,20 @@
+#include <iostream>
+#include<string>
+ 
+ 
+using namespace std;
+ 
+int main(){
+    int t;
+    cin>>t;
+    int count =0;
+    while(t--){
+    int p,v,t;
+    cin>>p>>v>>t;
+    if(p+v==2 || v+t==2 || p+t==2){
+        count = count +1;
+    }}
+    cout<<count;
+    
+}
+ 
