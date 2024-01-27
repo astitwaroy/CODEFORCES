@@ -1,0 +1,25 @@
+#include <iostream>
+#include<string>
+ 
+ 
+using namespace std;
+ 
+int main()
+{
+    //cout<<"Hello World";
+    
+    int n,i,j;
+    cin>>n;
+    string s[n];
+    for(int i=0;i<n;i++){
+        cin>>s[i];
+    }
+    for( j=0;j<n;j++){
+        
+        if(s[j].length()>10) cout<<s[j].at(0)<<s[j].length()-2<<s[j].at(s[j].length()-1)<<endl;
+        else cout<<s[j]<<endl;
+    
+    }
+    }
+    
+    
