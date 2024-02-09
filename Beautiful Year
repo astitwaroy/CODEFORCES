@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool hasRepeatedDigits(int number) {
+    int a = number / 1000;
+    int b = number / 100 % 10;
+    int c = number / 10 % 10;
+    int d = number % 10;
+    if (a != b && a != c && a != d && b != c && b != d && c != d) {
+        return false;
+    }
+    return true;
+}
+int findNextDistinctYear(int year) {
+    while (true) {
+        year += 1;
+        if (!hasRepeatedDigits(year)) {
+            break;
+        }
+    }
+    return year;
+}
+int main() {
+    int y;
+    cin >> y;
+    int nextDistinctYear = findNextDistinctYear(y);
+    cout << nextDistinctYear << endl;
+    return 0;
+}
+→Judgement Protocol
