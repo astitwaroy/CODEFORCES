@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,p,q;
+    cin >> n;
+    int acc=0;
+ 
+    while(n>0) {
+        cin>>p>>q;
+        if(1+p<q){
+            acc++;
+        }
+        else{
+            acc;
+        }
+        n--;
+    }
+    cout<<acc;
+    
+ 
+    return 0;
+}
