@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+string solve(){
+    int a,b;
+    cin>>a>>b;
+    while(a%2==0 || b%2==0){
+    if(a%2==0){
+        a = a/2;
+        if((2*b)!=(2*a)){
+            return "YES";
+        }
+    }
+    else if(b%2==0){
+        a=a;
+        b= b/2;
+        if((2*a)!=(2*b)){
+            return "YES";
+        }
+
+    }
+    }
+    return "NO";
+}
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        string s= solve();
+        cout<<s<<endl;
+    }
+    return 0;
+}
