@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main(){
+    int t;
+    cin>>t;
+    for(int i = 0;i<t;i++){
+        int n;
+        cin>>n;
+        char s[3];
+        int j = 1;
+        int k = n;
+        while(k>=2&&j<=27){
+            k = n;
+           k = n-j;
+           j++; 
+        }
+        j = j - 2;
+        s[2] = j + 'a'-1;
+        k = n-j+1;
+        int m = 1;
+        while(k>=1&&m<=27){
+            k = n-j;
+           k = n-m-j;
+           m++; 
+        }
+        m = m - 2;
+        s[1] = m + 'a'-1;
+        s[0] =n-m-j + 'a'-1;
+        if(n==3){
+            cout<<"aaa"<<endl;
+        }
+        else{
+        cout<<s[0]<<s[1]<<s[2]<<endl;
+        }
+ 
+ 
+ 
+ 
+    }
+}
